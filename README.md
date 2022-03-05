@@ -17,6 +17,10 @@ In the project directory, you can run:
 Open [http://localhost:3000](http://localhost:3000) to view the project in your browser.
 
 
-## Technologies used:
-- react
-- bootstrap
+## Dependencies used:
+
+- create-react-app dependencies
+
+- Bootstrap
+
+- React Router v6
