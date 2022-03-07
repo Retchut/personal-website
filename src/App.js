@@ -4,6 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 
+import "./App.css";
+
 import Navbar from './Components/Navbar/Navbar.js';
 import Home from "./Pages/Home/Home.js";
 import About from "./Pages/About/About.js";

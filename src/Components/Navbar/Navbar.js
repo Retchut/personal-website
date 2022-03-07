@@ -2,8 +2,8 @@ import {Link} from 'react-router-dom';
 
 function Navbar(){
     return (
-        <nav className="navbar navbar-expand-lg">
-            <div className="mx-4 container-fluid">
+        <nav className="navbar navbar-expand-lg background-box my-4">
+            <div className="mx-4 container-fluid link-button">
                 <Link to="/" className="navbar-brand">Home</Link>
 
                 <ul className="navbar-nav">

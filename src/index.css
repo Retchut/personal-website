@@ -1,0 +1,12 @@
+:root {
+    --back-primary: #050A30;
+    --back-secondary: #000C66;
+    --text-primary: #FFFFFF;
+    --text-secondary: #7EC8E3;
+}
+
+body{
+    background-color: var(--back-primary);
+    color: var(--text-primary);
+    margin: 2rem;
+}
