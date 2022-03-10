@@ -34,7 +34,7 @@ function Projects(){
                             <div key={"row-" + index} className="row">
                                 {
                                     projectRow.map(
-                                        project => <div key={project.Id} className="col"><Project projectData={project} /></div>
+                                        project => <div key={project.id} className="col"><Project projectData={project} /></div>
                                     )
                                 }
                             </div>
