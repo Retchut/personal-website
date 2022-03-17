@@ -1,16 +1,31 @@
 function Project(props){
   const { projectData } = props;
-  // console.log(projectData.imgPath);
   return (
-    <div className="mw-100">
-        <h1>{projectData.name}</h1>
-        <p>{projectData.description}</p>
-        <div className="row">{projectData.technologies.map((technology, index) => <div key={projectData.name + index} className="col"><p>technology</p></div>)}</div>
-        <img src={ require('../../Assets/Images/placeholder.jpg') }></img>
-        {/* <img src={ require(projectData.imgPath) }></img> */}
-
-        <a href={projectData.url}>Git Repo</a>
+    <>
+      <div className="row">
+        <div className="col">
+          <img className="w-100 h-100" src={ require('../../Assets/Images/placeholder.jpg') }></img>
+           {/* <img src={ require(projectData.imgPath) }></img> */}
+        </div>
+        <div className="col">
+          <div className="row">
+            <h1>{projectData.name}</h1>
+          </div>
+          <div className="row">
+            <p>{projectData.description}</p>
+          </div>
+        </div>
       </div>
+
+      <div className="row">
+        <div className="col">
+          <div className="row">{projectData.technologies.map((technology, index) => <div key={projectData.name + index} className="col"><p>technology</p></div>)}</div>
+        </div>
+        <div className="col">
+          <a href={projectData.url}>Git Repo</a>
+        </div>
+      </div>
+    </>
   );
 }
 
