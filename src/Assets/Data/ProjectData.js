@@ -7,7 +7,7 @@ export const ProjectData =
         technologies : [
             "bash"
         ],
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         url : "https://github.com/Retchut/arch-quick-setup"
     },
     {
@@ -17,14 +17,14 @@ export const ProjectData =
         technologies : [
             "C"
         ],
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         url : "https://github.com/Retchut/LCOM-2020-2021"
     },
     {
         id : 3,
         name : "NCGM Learning Project",
         description : "My learning project developed for NCGM. A simple text based adventure about escaping a locked room.",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "Unity",
             "C#"
@@ -35,7 +35,7 @@ export const ProjectData =
         id : 4,
         name : "SRT Editor",
         description : "Simple srt file editing tool created to aid me in my manual modification (and occasional creation) of subtitle files.",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "C++"
         ],
@@ -45,7 +45,7 @@ export const ProjectData =
         id : 5,
         name : "PROG 2019/2020",
         description : "Repository for MIEIC's PROG class of the year 2021/2022. Contains the projects my group developed for this class: games based on oware and scrabble.",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "C++"
         ],
@@ -58,14 +58,14 @@ export const ProjectData =
         technologies : [
             "Python"
         ],
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         url : "https://github.com/Retchut/MNUM-2020-2021"
     },
     {
         id : 7,
         name : "Proj7",
         description : "Proj7Desc",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "Proj7Tag1"
         ],
@@ -75,7 +75,7 @@ export const ProjectData =
         id : 8,
         name : "Proj8",
         description : "Proj8Desc",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "Proj8Tag1"
         ],
@@ -85,7 +85,7 @@ export const ProjectData =
         id : 9,
         name : "Proj9",
         description : "Proj9Desc",
-        imgPath : "../../Assets/Images/placeholder.jpg",
+        imgPath : "./Images/Projects/placeholder.jpg",
         technologies : [
             "Proj9Tag1"
         ],

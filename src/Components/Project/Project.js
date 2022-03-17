@@ -4,8 +4,7 @@ function Project(props){
     <>
       <div className="row">
         <div className="col">
-          <img className="w-100 h-100" src={ require('../../Assets/Images/placeholder.jpg') }></img>
-           {/* <img src={ require(projectData.imgPath) }></img> */}
+          <img className="w-100 h-100" src={projectData.imgPath}></img>
         </div>
         <div className="col">
           <div className="row">
@@ -26,6 +25,7 @@ function Project(props){
         </div>
       </div>
     </>
+
   );
 }
 
