@@ -18,9 +18,14 @@ function Project(props){
 
       <div className="row">
         <div className="col">
-          <div className="row">{projectData.technologies.map((technology, index) => <div key={projectData.name + index} className="col"><p>technology</p></div>)}</div>
+          <div className="row my-1 h-100">
+            {projectData.technologies.map((technology, index) =>
+              <div key={projectData.name + index} className="col d-flex justify-content-center align-items-center">
+                <p class="mb-0 tag rounded">{technology}</p>
+              </div>)}
+          </div>
         </div>
-        <div className="col">
+        <div className="col link-buttons d-flex justify-content-center">
           <a href={projectData.url}>Git Repo</a>
         </div>
       </div>

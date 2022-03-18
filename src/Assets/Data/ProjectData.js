@@ -60,35 +60,5 @@ export const ProjectData =
         ],
         imgPath : "./Images/Projects/placeholder.jpg",
         url : "https://github.com/Retchut/MNUM-2020-2021"
-    },
-    {
-        id : 7,
-        name : "Proj7",
-        description : "Proj7Desc",
-        imgPath : "./Images/Projects/placeholder.jpg",
-        technologies : [
-            "Proj7Tag1"
-        ],
-        url : "https://example.com/"
-    },
-    {
-        id : 8,
-        name : "Proj8",
-        description : "Proj8Desc",
-        imgPath : "./Images/Projects/placeholder.jpg",
-        technologies : [
-            "Proj8Tag1"
-        ],
-        url : "https://example.com/"
-    },
-    {
-        id : 9,
-        name : "Proj9",
-        description : "Proj9Desc",
-        imgPath : "./Images/Projects/placeholder.jpg",
-        technologies : [
-            "Proj9Tag1"
-        ],
-        url : "https://example.com/"
     }
 ];
