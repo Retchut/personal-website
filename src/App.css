@@ -11,6 +11,10 @@
     border-radius: 10px;
 }
 
+.link-buttons a:focus {
+    color:var(--text-primary);
+}
+
 .link-buttons a:hover {
     background-color: var(--text-secondary);
     color:var(--back-secondary);
