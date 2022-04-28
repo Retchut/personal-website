@@ -36,7 +36,7 @@ function Projects(){
                                 {
                                     projectRow.map(
                                         project =>
-                                        <div key={project.id} className="col mx-3 mb-4 h-100 background-box rounded p-4">
+                                        <div key={project.id} className="col mb-4">
                                             <Project projectData={project} />
                                         </div>
                                     )
