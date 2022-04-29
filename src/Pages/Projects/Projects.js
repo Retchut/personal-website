@@ -32,7 +32,7 @@ function Projects(){
                     BuildRows().map((projectRow, index) =>
                     {
                         return (
-                            <div key={"row-" + index} className="row">
+                            <div key={"row-" + index} className="row d-flex justify-content-center">
                                 {
                                     projectRow.map(
                                         project =>
