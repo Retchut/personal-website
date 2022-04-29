@@ -1,14 +1,14 @@
 function Project(props){
   const { projectData } = props;
   return (
-    <div className="mx-3 h-100 background-box rounded p-4 ">
+    <div className="mx-3 h-100 background-box rounded p-4">
       <div className="row">
         <div className="col-lg-4 d-flex align-items-center">
-          <img className="w-100 h-100 rounded" src={projectData.imgPath}></img>
+          <img className="w-100 mh-100 rounded" src={projectData.imgPath}></img>
         </div>
         <div className="col-lg-8">
           <div className="row">
-            <h1>{projectData.name}</h1>
+            <h2>{projectData.name}</h2>
           </div>
           <div className="row">
             <p>{projectData.description}</p>
@@ -17,7 +17,7 @@ function Project(props){
       </div>
 
       <div className="row">
-        <div className="col-lg-4 link-buttons d-flex justify-content-center">
+        <div className="col-lg-4 pt-2 link-buttons d-flex justify-content-center align-items-center">
           <a href={projectData.url}>Git Repo</a>
         </div>
         <div className="col-lg-8">
