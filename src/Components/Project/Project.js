@@ -5,7 +5,7 @@ function Project(props){
       {/* Img/Name/Description */}
       <div className="row flex-shrink-1 w-100">
         <div className="col-lg-4 d-flex justify-content-center align-items-start">
-          <img className="img-fluid rounded" src={projectData.imgPath}></img>
+          <img className="pt-2 img-fluid rounded" src={projectData.imgPath}></img>
         </div>
         <div className="col-lg-8">
           <div className="row">
