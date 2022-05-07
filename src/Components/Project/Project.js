@@ -25,7 +25,7 @@ function Project(props){
         <div className="col-lg-8">
           <div className="row my-1 h-100">
             {projectData.technologies.map((technology, index) =>
-              <div key={projectData.name + index} className="col d-flex justify-content-center align-items-center">
+              <div key={projectData.name + index} className="col text-nowrap d-flex justify-content-center align-items-center">
                 <p class="mb-0 tag rounded">{technology}</p>
               </div>)}
           </div>
