@@ -1,3 +1,5 @@
+import React from 'react';
+
 function Project(props){
   const { projectData } = props;
   return (

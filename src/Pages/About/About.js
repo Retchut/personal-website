@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { AboutData } from '../../Assets/Data/AboutData.js'
 
 function About(){
