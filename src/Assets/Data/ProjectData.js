@@ -66,5 +66,20 @@ export const ProjectData =
             "C#"
         ],
         url : "https://github.com/Retchut/LearningProject1920"
+    },
+    {
+        id : 7,
+        name : "lbaw2115 Project",
+        description : "Project developed by my group for the Laboratory of Databases and Web Applications (LBAW).",
+        imgPath : "./Images/Projects/LearningProject.png",
+        technologies : [
+            "PHP",
+            "PostgreSQL",
+            "Laravel",
+            "Bootstrap",
+            "JavaScript",
+            "Docker"
+        ],
+        url : "https://github.com/Retchut/lbaw2115"
     }
 ];
