@@ -1,3 +1,5 @@
+import React from 'react';
+
 import Project from '../../Components/Project/Project.js'
 
 import { ProjectData } from '../../Assets/Data/ProjectData.js'

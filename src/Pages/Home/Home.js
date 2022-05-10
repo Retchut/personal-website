@@ -1,3 +1,5 @@
+import React from 'react';
+
 import { HomeData } from '../../Assets/Data/HomeData.js'
 
 function Home(){
