@@ -1,10 +1,9 @@
 .background-box {
     background-color: var(--back-secondary);
     box-shadow: 0px 0px 10px var(--text-secondary);
-    border-radius: 10px;
 }
 
-.link-button a {
+.link-buttons a {
     padding: 0.5rem 1rem;
     text-decoration: none;
     color:var(--text-primary);
@@ -12,7 +11,16 @@
     border-radius: 10px;
 }
 
-.link-button a:hover {
+.link-buttons a:focus {
+    color:var(--text-primary);
+}
+
+.link-buttons a:hover {
     background-color: var(--text-secondary);
     color:var(--back-secondary);
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    padding: 0rem 0.5rem; 
 }

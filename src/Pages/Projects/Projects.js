@@ -5,13 +5,14 @@ import { ProjectData } from '../../Assets/Data/ProjectData.js'
 // Build Rows of projects from ProjectData
 function BuildRows(){
     let projectArrays = [];
+    let projectCols = 3;
     
     for(let i = 0; i < ProjectData.length; i++){
-        if(i % 3 == 0){
+        if(i % projectCols == 0){
             projectArrays.push([ProjectData[i]]);
         }
         else{
-            projectArrays[Math.floor(i/3)].push(ProjectData[i]);
+            projectArrays[Math.floor(i/projectCols)].push(ProjectData[i]);
         }
     }
     
@@ -21,7 +22,7 @@ function BuildRows(){
 function Projects(){
     return (
         <>
-            <h1>Projects page</h1>
+            <h1>Projects</h1>
             <hr></hr>
             <div className="project-showcase">
                 {/*
@@ -31,10 +32,13 @@ function Projects(){
                     BuildRows().map((projectRow, index) =>
                     {
                         return (
-                            <div key={"row-" + index} className="row">
+                            <div key={"row-" + index} className="row d-flex justify-content-center">
                                 {
                                     projectRow.map(
-                                        project => <div key={project.id} className="col"><Project projectData={project} /></div>
+                                        project =>
+                                        <div key={project.id} className="col-lg-4 mb-4">
+                                            <Project projectData={project} />
+                                        </div>
                                     )
                                 }
                             </div>
