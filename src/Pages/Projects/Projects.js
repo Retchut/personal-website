@@ -2,19 +2,20 @@ import React from 'react';
 
 import Project from '../../Components/Project/Project.js'
 
-import { ProjectData } from '../../Assets/Data/ProjectData.js'
+import { ProjectPageData } from '../../Assets/Data/ProjectPageData.js'
 
-// Build Rows of projects from ProjectData
+// Build Rows of projects from ProjectPageData
 function BuildRows(){
     let projectArrays = [];
     let projectCols = 3;
+    let projects = ProjectPageData.projectsData;
     
-    for(let i = 0; i < ProjectData.length; i++){
+    for(let i = 0; i < projects.length; i++){
         if(i % projectCols == 0){
-            projectArrays.push([ProjectData[i]]);
+            projectArrays.push([projects[i]]);
         }
         else{
-            projectArrays[Math.floor(i/projectCols)].push(ProjectData[i]);
+            projectArrays[Math.floor(i/projectCols)].push(projects[i]);
         }
     }
     
@@ -37,9 +38,9 @@ function Projects(){
                             <div key={"row-" + index} className="row d-flex justify-content-center">
                                 {
                                     projectRow.map(
-                                        project =>
-                                        <div key={project.id} className="col-lg-4 mb-4">
-                                            <Project projectData={project} />
+                                        projectData =>
+                                        <div key={projectData.id} className="col-lg-4 mb-4">
+                                            <Project projectData={projectData} />
                                         </div>
                                     )
                                 }
