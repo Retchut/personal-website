@@ -7,7 +7,7 @@ function Project(props){
       {/* Img/Name/Description */}
       <div className="row flex-shrink-1 w-100">
         <div className="col-lg-4 mt-2 d-flex justify-content-center align-items-center">
-          <img className="img-fluid rounded" src={projectData.imgPath}></img>
+          <img className="img-fluid rounded" src={projectData.imgPath} alt={projectData.name + "-img"}></img>
         </div>
         <div className="col-lg-8">
           <div className="row pt-2">
@@ -28,11 +28,11 @@ function Project(props){
           <div className="row my-1 h-100">
             {projectData.tags.map((tag, index) =>
               <div key={projectData.name + "Tag" + index} className="col text-nowrap d-flex justify-content-center align-items-center">
-                <p className="mb-0 tech rounded">{tag}</p>
+                <p className="mb-0 tag rounded">{tag}</p>
               </div>)}
             {projectData.technologies.map((technology, index) =>
               <div key={projectData.name + "Tech" + index} className="col text-nowrap d-flex justify-content-center align-items-center">
-                <p className="mb-0 tag rounded">{technology}</p>
+                <p className="mb-0 tech rounded">{technology}</p>
               </div>)}
           </div>
         </div>

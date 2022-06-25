@@ -1,5 +1,6 @@
 import React from 'react';
 
+import './Projects.css'
 import Project from '../../Components/Project/Project.js'
 
 import { ProjectPageData } from '../../Assets/Data/ProjectPageData.js'
@@ -11,7 +12,7 @@ function BuildRows(){
     let projects = ProjectPageData.projectsData;
     
     for(let i = 0; i < projects.length; i++){
-        if(i % projectCols == 0){
+        if(i % projectCols === 0){
             projectArrays.push([projects[i]]);
         }
         else{
@@ -27,6 +28,21 @@ function Projects(){
         <>
             <h1>Projects</h1>
             <hr></hr>
+
+            {/*
+                Page Description
+            */}
+            <div className="row">
+                <div className="projects-intro col pb-4">
+                    <div className="rounded">
+                        {ProjectPageData.projectsIntro.map((paragraph, index) => {
+                                return (<p key={"welcome-" + index}>{paragraph}</p>)
+                            }
+                        )}
+                    </div>
+                </div>
+            </div>
+
             <div className="project-showcase">
                 {/*
                     Map each row of projects to Project elements
