@@ -1,8 +1,7 @@
 export const ProjectPageData = {
     projectsIntro : [
-        "Some projects I have created or have been involved in"
+        "Some projects I have created or been involved in"
     ],
-    projectsTags : [ "Web", "Game Dev", "Misc", "University", "VR" ],
     projectsData : [
         {
             id : 1,
