@@ -32,7 +32,7 @@ function DropdownMenu(props){
     return(
         <ul className="my-drop-menu background-box">
             <div className="row m-0">
-                {dropdownItems.map((colItems) => <DropdownCol colItems={colItems} stateHandler={stateHandler}></DropdownCol>)}
+                    {dropdownItems.map((colItems, index) => <DropdownCol key={"dropdown-menu-col-" + index} colItems={colItems} stateHandler={stateHandler}></DropdownCol>)}
             </div>
         </ul>
     );
