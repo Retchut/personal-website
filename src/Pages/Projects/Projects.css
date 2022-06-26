@@ -1,0 +1,13 @@
+.projects-intro {
+    font-size: large;
+}
+
+.tag {
+    background-color: var(--tag-bg);
+    padding: 0rem 0.5rem; 
+}
+
+.tech {
+    background-color: var(--tech-bg);
+    padding: 0rem 0.5rem; 
+}
