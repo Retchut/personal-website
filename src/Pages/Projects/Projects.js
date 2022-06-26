@@ -8,16 +8,7 @@ import { ProjectPageData } from '../../Assets/Data/ProjectPageData.js';
 
 function Projects(){
 
-    const PROJECT_FILTERS = {
-        ALL : "All",
-        WEB : "Web",
-        GAME_DEV : "Game Dev",
-        UNIVERSITY : "University",
-        MISC : "Misc",
-        VR : "VR"
-    }
-
-    const [ filterState, setFilter ] = useState(PROJECT_FILTERS.ALL);
+    const [ filterState, setFilter ] = useState("All");
     
     // Build Rows of projects from ProjectPageData
     function BuildRows(){
@@ -27,7 +18,7 @@ function Projects(){
         let tagFilter = filterState;
         let projects = ProjectPageData.projectsData.filter(
             // filter items with the active filter. All items if filter is set to "All"
-            project => (tagFilter === PROJECT_FILTERS.ALL) ? true : project.tags.find(tag => tag === tagFilter)
+            project => (tagFilter === "All") ? true : project.tags.find(tag => tag === tagFilter)
         );
         
         for(let i = 0; i < projects.length; i++){
@@ -60,7 +51,7 @@ function Projects(){
                     </div>
                 </div>
                 <div className="col d-flex justify-content-end">
-                    <Dropdown></Dropdown>
+                    <Dropdown dropdownItems={ProjectPageData.projectsTags} stateHandler={setFilter}></Dropdown>
                 </div>
             </div>
 

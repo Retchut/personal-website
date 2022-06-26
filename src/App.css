@@ -17,6 +17,7 @@
 }
 
 .link-buttons a:hover {
+    cursor: pointer;
     background-color: var(--text-secondary);
     color:var(--back-secondary);
 }
