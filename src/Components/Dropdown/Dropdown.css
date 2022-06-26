@@ -1,0 +1,20 @@
+.my-drop-menu{
+    position: absolute;
+    transform: translate(-110%, -100%);
+    width: 200px;
+    padding: 0;
+
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.my-drop-item{
+    box-shadow: 0px 0px 1px var(--text-secondary);
+}
+
+.my-drop-item a{
+    height: 100%;
+    width: 100%;
+    
+    text-align: center;
+}

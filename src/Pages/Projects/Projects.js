@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 
 import './Projects.css'
-import Project from '../../Components/Project/Project.js'
+import Project from '../../Components/Project/Project.js';
+import Dropdown from '../../Components/Dropdown/Dropdown.js';
 
-import { ProjectPageData } from '../../Assets/Data/ProjectPageData.js'
+import { ProjectPageData } from '../../Assets/Data/ProjectPageData.js';
 
 function Projects(){
 
@@ -16,14 +17,14 @@ function Projects(){
         VR : "VR"
     }
 
-    const [ filterState, setFilter ] = useState( {currentFilter : PROJECT_FILTERS.ALL} );
+    const [ filterState, setFilter ] = useState(PROJECT_FILTERS.ALL);
     
     // Build Rows of projects from ProjectPageData
     function BuildRows(){
         let projectArrays = [];
         let projectCols = 3;
         // let projects = ProjectPageData.projectsData;
-        let tagFilter = filterState.currentFilter;
+        let tagFilter = filterState;
         let projects = ProjectPageData.projectsData.filter(
             // filter items with the active filter. All items if filter is set to "All"
             project => (tagFilter === PROJECT_FILTERS.ALL) ? true : project.tags.find(tag => tag === tagFilter)
@@ -59,7 +60,7 @@ function Projects(){
                     </div>
                 </div>
                 <div className="col d-flex justify-content-end">
-                    {/* Dropdown here */}
+                    <Dropdown></Dropdown>
                 </div>
             </div>
 
