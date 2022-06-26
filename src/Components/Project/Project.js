@@ -3,7 +3,7 @@ import React from 'react';
 function Project(props){
   const { projectData } = props;
   return (
-    <div className="d-flex flex-wrap justify-content-center h-100 background-box rounded mx-3 p-4">
+    <div className="d-flex flex-wrap justify-content-center h-100 background-box mx-3 p-4">
       {/* Img/Name/Description */}
       <div className="row flex-shrink-1 w-100">
         <div className="col-lg-4 mt-2 d-flex justify-content-center align-items-center">

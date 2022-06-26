@@ -9,7 +9,7 @@ function Home(){
             <hr></hr>
             <div className="row">
                 <div className="col pb-4">
-                    <div className="background-box rounded mr-3 p-4">
+                    <div className="background-box mr-3 p-4">
                         {HomeData.welcome.map((paragraph, index) => {
                                 return (<p key={"welcome-" + index}>{paragraph}</p>)
                             }
