@@ -1,0 +1,28 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    height: 5vh;
+}
+
+.footer-div {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.footer-content {
+    padding: 0.3rem 0.5rem;
+    width: max-content;
+}
+
+.footer-content a {
+    margin: 0 0.2rem;
+    width: max-content;
+}
+
+.footer-img-link {
+    background-color: #FFF;
+    border-radius: 50%;
+}

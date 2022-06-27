@@ -23,7 +23,7 @@ function DropdownCol(props){
 function DropdownMenu(props){
     const { dropdownItems, stateHandler } = props;
 
-    // one column only (pass props to this function, not the result of BuildRows)
+    // one column only (pass props to this function component, not the result of BuildRows)
     // return (
     //     <ul className="my-drop-menu background-box">
     //         {dropdownItems.map((item) => <DropdownItem key={"dropdown-item-" + item} itemLabel={item} stateHandler={stateHandler}></DropdownItem>)}
@@ -32,7 +32,7 @@ function DropdownMenu(props){
     return(
         <ul className="my-drop-menu background-box">
             <div className="row m-0">
-                {dropdownItems.map((colItems) => <DropdownCol colItems={colItems} stateHandler={stateHandler}></DropdownCol>)}
+                    {dropdownItems.map((colItems, index) => <DropdownCol key={"dropdown-menu-col-" + index} colItems={colItems} stateHandler={stateHandler}></DropdownCol>)}
             </div>
         </ul>
     );
